@@ -1,4 +1,17 @@
-# Prosper-Loan-Analysis
-This project entails the analysis of a loan company's data, the data set contained 113937 entries arranged in the rows and 81 variables partitioned into columns. Some columns were selected from the dataset for easy exploration. The main feature of interest was the annual percentage rate (BorrowerAPR).
-The analysis was guided by a leading question "What factors affects the annual percentage rate (BorrowerAPR)". 
-Thus the relationship between BorrowerAPR and loan amount, Prosper score, loan term, employment status were explored. I discovered loan amount is one of the determining factors of BorrowerAPR, as amount increases the BorrowerAPR reduces. The BorrowerRate structure is similar to the BorrowerAPR, BorrowerAPR is BorrowerRate plus other fees and charges. The prosper score which is a determinant of credit worthiness influences the loan amount and resultantly influence the BorrowerAPR. Most people fall under the 36 months loan term category.
+# (Dataset Exploration of Prosper Loan Data)
+## by (Ibiwoye Bisola)
+
+
+## Dataset
+
+> The data set contained 113937 entries arranged in the rows and 81 variables partitioned into columns. Some columns were selected from the dataset for easy exploration. The main feature of interest was the annual percentage rate (BorrowerAPR). 
+
+
+## Summary of Findings
+
+> The loan amount is one of the determining factors of BorrowerAPR, as amount increases the BorrowerAPR reduces. The BorrowerRate structure is similar to the  BorrowerAPR, BorrowerAPR is BorrowerRate plus other fees and charges. The prosper score which is a determinant of credit worthiness influences the loan amount and resultantly influence the BorrowerAPR. Those with low prosper score of 4.0 and 5.0 has loan amount less than 10,000 and 20,000 respectively. Prosper score signifies credit worthiness, the loan company may not trust those with low prosper score with larger amount. A lot of people fall between the prosper score of 4.0 to 7.0 while prosper score 1.0 has the lowest number of people followed by those with 11.0 prosper score. This means those with highest prosper score have high credit worthiness and they are fewer in number compared to those with average prosper score rating. Most people fall under the 36 months loan term category.
+
+
+## Key Insights for Presentation
+
+> My exploration was guided with a leading question "What factors affects the annual percentage rate (BorrowerAPR)" using the Question-Visualization-Observations framework thus i explored the relationship between BorrowerAPR and loan amount, Prosper score, loan term, employment status. I started by exploring the relationship between loan amount and annual percentage rate on a scatter plot, i discovered lower amount has higher rate while higher amount has lower rate, with values below 5000 having the highest rate. This means Loan amount and Borrower's annual percentage rate are negatively correlated, as amount increases, the APR reduces and vice-versa. Real life interpretation of Prosper data mean people who borrow higher amount pay lesser annual rate.Then i move on to explore the prosper score and annual percentage rate in a box plot, i discovered low prosper score has high annual percentage rate while high prosper score has low annual percentage rate. This means people with high credit worthiness pay lower interest rate than those with low credit worthiness. I also explored the relationship between borrower's annual percentage rate and loan term in a facetgrid, the visualization show more people fall in the 36 months loan category, however the annual percentage rate is higher for the 36 months loan stretching beyond 0.4 while the annual percentage interest rate for 60 months loan term is lower. This opposed the hypothesis i had that higher loan term means higher interest rate. Lastly, the relationship between annual percentage rate, interest rate and loan amount was explored in a plot matrix, the visualization showed loan amount is negatively correlated with BorrowerAPR and BorrowerRate, BorrowerRate is positively correlated with BorrowerAPR. BorrowerAPR and BorrowerRate are normal bell shaped distribution while loan amount is skewed to the right with most of the distribution on the tail.
